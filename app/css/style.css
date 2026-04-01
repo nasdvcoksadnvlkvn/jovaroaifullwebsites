@@ -12,6 +12,14 @@
   --font-inter: var(--font-inter), sans-serif;
   --font-nacelle: var(--font-nacelle), sans-serif;
 
+  /* Background gradients */
+  --bg-linear-to-t: linear-gradient(to top, var(--gradient-stops));
+  --bg-linear-to-b: linear-gradient(to bottom, var(--gradient-stops));
+  --bg-linear-to-r: linear-gradient(to right, var(--gradient-stops));
+  --bg-linear-to-l: linear-gradient(to left, var(--gradient-stops));
+  --bg-linear-to-br: linear-gradient(to bottom right, var(--gradient-stops));
+  --bg-linear-to-bl: linear-gradient(to bottom left, var(--gradient-stops));
+
   --text-xs: 0.8125rem;
   --text-xs--line-height: 1.5384;
   --text-sm: 0.875rem;
