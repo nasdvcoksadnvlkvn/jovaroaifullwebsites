@@ -9,12 +9,34 @@ export default function Header() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-slate-800/40 px-3 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-slate-700/50 after:absolute after:inset-0 after:-z-10 after:backdrop-blur-sm">
           {/* Site branding */}
-          <div className="flex flex-1 items-center">
+          <div className="flex items-center">
             <Logo />
           </div>
 
+          {/* Navigation links */}
+          <nav className="flex items-center gap-6">
+            <Link
+              href="#how-it-works"
+              className="text-sm text-gray-300 hover:text-white transition-colors"
+            >
+              How it works
+            </Link>
+            <Link
+              href="#features"
+              className="text-sm text-gray-300 hover:text-white transition-colors"
+            >
+              Features
+            </Link>
+            <Link
+              href="#pricing"
+              className="text-sm text-gray-300 hover:text-white transition-colors"
+            >
+              Pricing
+            </Link>
+          </nav>
+
           {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
+          <ul className="flex items-center justify-end gap-3">
             <li>
               <Link
                 href="/signin"
